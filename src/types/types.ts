@@ -8,7 +8,7 @@ export type dataType = {
         id: number,
         company: string,
         logo: string,
-        new: boolean,
+        condition: boolean,
         featured: boolean,
         position: string,
         role: string,
