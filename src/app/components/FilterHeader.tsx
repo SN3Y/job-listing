@@ -12,7 +12,7 @@ export default function FilterHeader({filter, clearFilter, clearAllFilter}:filte
           {filter.map(filtro => {
                 return(
                     
-                            <button onClick={()=>clearFilter(filtro)} className="flex items-center gap-1 bg-Light-Grayish-Cyan-(Background) text-Dark-Grayish-Cyan rounded-md p-1 px-1 m-2 text-start">
+                            <button key={filtro} onClick={()=>clearFilter(filtro)} className="flex items-center gap-1 bg-Light-Grayish-Cyan-(Background) text-Dark-Grayish-Cyan rounded-md p-1 px-1 m-2 text-start">
                                 {filtro}
                                 <div className="bg-Dark-Grayish-Cyan h-full items-center hover:bg-Very-Dark-Grayish-Cyan">
                                     <Image src={x} width={25} height={14} alt="x"/>
