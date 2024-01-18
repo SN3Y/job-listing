@@ -3,8 +3,7 @@ export type filterFunctions = {
         clearFilter: Function,
         clearAllFilter: Function,
 }
-
-export type dataType = {
+export interface listType {
         id: number,
         company: string,
         logo: string,
@@ -17,10 +16,27 @@ export type dataType = {
         contract: string,
         location: string,
         languages: string[],
-        tools: string[],
-        filter: string[]
-        addFilter: Function,
-        filterFunction: Function
+        tools: string[]
+}
+
+
+export interface dataType {
+        id: number;
+        company: string;
+        logo: string;
+        condition: boolean;
+        featured: boolean;
+        position: string;
+        role: string;
+        level: string;
+        postedAt: string;
+        contract: string;
+        location: string;
+        languages: string[];
+        tools: string[];
+        filter: string[];
+        filterFunction: Function;
+        addFilter: Function;
 }
 export interface IconType {
         url: string,

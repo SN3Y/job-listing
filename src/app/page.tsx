@@ -4,11 +4,11 @@ import FilterHeader from './components/FilterHeader'
 import listData from '../data/data.json'
 import { useEffect, useState } from 'react'
 import Card from './components/Card'
-import { dataType } from '@/types/types'
+import {dataType, listType}  from '../types/types'
 
 export default function Home() {
 
-  const [data, setData] = useState<dataType[]>([])
+  const [data, setData] = useState<listType[]>([])
   const [filter, setFilter] = useState<string[]>([])
 
   useEffect(()=> {
@@ -55,7 +55,7 @@ return(
                           id={dato.id}
                           company={dato.company}
                           logo={dato.logo}
-                          condition={dato.new}
+                          condition={dato.condition}
                           featured={dato.featured}
                           position={dato.position}
                           role={dato.role}
