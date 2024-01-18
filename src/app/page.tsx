@@ -4,7 +4,7 @@ import FilterHeader from './components/FilterHeader'
 import listData from '../data/data.json'
 import { useEffect, useState } from 'react'
 import Card from './components/Card'
-import {dataType, listType}  from '../types/types'
+import {listType}  from '../types/types'
 
 export default function Home() {
 
@@ -45,7 +45,7 @@ return(
         <FilterHeader filter={filter} clearAllFilter={clearAllFilter} clearFilter={clearFilter} />
         
       </div>
-      <div className='md:mt-4 w-screen h-screen grid justify-center items-center'>
+      <div className='md:mt-12 w-screen h-screen grid justify-center items-center'>
 
           { 
             data.map(dato => {

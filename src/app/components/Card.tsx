@@ -49,7 +49,7 @@ export default function Card(
                     {condition != false ? <div className="md:h-6 rounded-xl bg-Dark-Grayish-Cyan px-2 py-[0.5px]">
                         <p className="text-Light-Grayish-Cyan-(Background)">NEW!</p>
                         </div>: ""}
-                    {featured != false ? <div key={id} className="md:h-6 rounded-md px-2 bg-Very-Dark-Grayish-Cyan md:py-[0.5px]">
+                    {featured != false ? <div key={id} className="md:h-6 rounded-xl px-2 bg-Very-Dark-Grayish-Cyan md:py-[0.5px]">
                         <p className="text-Light-Grayish-Cyan-(Background)">FEATURED</p>
                         </div> : ""}
                 </div>
