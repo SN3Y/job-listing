@@ -28,7 +28,7 @@ export default function Card(
 
     const Skills = (skill:string) =>{
         return(
-            <button key={id} className="rounded-md p-1 px-1 m-2 bg-Light-Grayish-Cyan-(Background) h-fit 
+            <button key={skill} className="rounded-md p-1 px-1 m-2 bg-Light-Grayish-Cyan-(Background) h-fit 
             items-center hover:bg-Desaturated-Dark-Cyan  text-Desaturated-Dark-Cyan hover:text-white" onClick={()=>handleClick(skill) + addFilter(skill) }>
                 {skill}
             </button>
@@ -49,7 +49,7 @@ export default function Card(
                     {condition != false ? <div className="md:h-6 rounded-xl bg-Dark-Grayish-Cyan px-2 py-[0.5px]">
                         <p className="text-Light-Grayish-Cyan-(Background)">NEW!</p>
                         </div>: ""}
-                    {featured != false ? <div className="md:h-6 rounded-md px-2 bg-Very-Dark-Grayish-Cyan md:py-[0.5px]">
+                    {featured != false ? <div key={id} className="md:h-6 rounded-md px-2 bg-Very-Dark-Grayish-Cyan md:py-[0.5px]">
                         <p className="text-Light-Grayish-Cyan-(Background)">FEATURED</p>
                         </div> : ""}
                 </div>
